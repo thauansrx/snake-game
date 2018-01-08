@@ -1,2 +1,4 @@
 # Snake-Game
-Simple Game - Snake
+
+*** Simple Game - Snake ***
+
