@@ -30,6 +30,8 @@ public class GamePanel extends JPanel implements Runnable, KeyListener {
 	private Entity head, apple;
 	private ArrayList<Entity> snake;
 	private int ponto;
+        private int level;
+        private boolean gameover;
 	
 	//Movimento
 	private int dx,dy;
@@ -120,7 +122,11 @@ public class GamePanel extends JPanel implements Runnable, KeyListener {
 		
 		running = true;
 		setUplevel();
-		setFPS(10);
+                
+                gameover = false;
+                level = 1;
+                
+		setFPS(level * 10);
  
 	}
 	
